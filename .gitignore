@@ -1,0 +1,8 @@
+# Regenerable build artifacts (created by install.sh / running the scripts)
+.venv/
+__pycache__/
+*.pyc
+
+# Regenerated panel dump: non-deterministic in the degenerate-panel GLMM fits
+# (those raw fits are discarded; reported numbers come from the panel table + stdout).
+panel-glmm/panel-glmm-q1-q6.json

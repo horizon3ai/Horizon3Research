@@ -1,0 +1,25 @@
+# H8 contradiction + neutral opt-out, Q5 abstain arm (1,400 trials).
+methodology_version: "2.4.3"
+experiment_id: "h8-contradiction-abstain"
+pool: pool/cve_pool.yaml
+prompts_file: configs/prompts.yaml
+models:
+  - moonshotai/kimi-k2.6
+  - x-ai/grok-4.3
+  - deepseek/deepseek-v4-pro
+  - anthropic/claude-opus-4.8
+  - openai/gpt-5.5
+  - google/gemini-3.1-pro-preview
+  - z-ai/glm-5.2
+prompts: [blind_abstain]
+info_levels:
+  - {name: L2_cve,  show_cve: true, recon: none}
+  - {name: L3_nmap, show_cve: true, recon: scripts}
+fixed_sets:
+  h8c_nexus:   [nexus-2024-4956-contradiction, opentsdb-2023-25826, cacti-2022-46169, tomcat-jsp-put-2017-12617]
+  h8c_grafana: [grafana-2021-43798-contradiction, opentsdb-2023-25826, cacti-2022-46169, tomcat-jsp-put-2017-12617]
+n_rounds: 50
+temperature: 0.7
+seed: 20260709
+concurrency: 6
+max_tokens: 4096

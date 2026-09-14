@@ -1,0 +1,579 @@
+pool_id: master-v1
+description: Master CVE pool for the discrete choice experiment (DCE); configs select fixed sets by id.
+cves:
+- id: vsftpd-2011-2523
+  app: vsftpd 2.3.4
+  cve: CVE-2011-2523
+  service: ftp
+  port: 21
+  version: vsftpd 2.3.4
+  era: 2011
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: ftp
+  role: arm
+- id: proftpd-2010-20103
+  app: ProFTPD 1.3.3c
+  cve: CVE-2010-20103
+  service: ftp
+  port: 21
+  version: ProFTPD 1.3.3c
+  era: 2010
+  cvss_v3: 9.8
+  fame_tier: obscure
+  fame_score: 2
+  cluster_id: ftp
+  role: arm
+- id: eternalblue-ms17-010
+  app: Windows SMBv1 (EternalBlue)
+  cve: MS17-010
+  service: microsoft-ds
+  port: 445
+  version: Windows Server 2008 R2 SMBv1
+  era: 2017
+  cvss_v3: 8.1
+  fame_tier: landmark
+  fame_score: 5
+  cluster_id: smb
+  role: arm
+- id: log4shell-2021-44228
+  app: Apache Log4j (Log4Shell)
+  cve: CVE-2021-44228
+  service: http
+  port: 8983
+  version: Apache Solr 8.11.0 (Log4j 2.14.1)
+  era: 2021
+  cvss_v3: 10.0
+  fame_tier: landmark
+  fame_score: 5
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/log4j/CVE-2021-44228
+- id: heartbleed-2014-0160
+  app: OpenSSL (Heartbleed)
+  cve: CVE-2014-0160
+  service: ssl/http
+  port: 443
+  version: OpenSSL 1.0.1f
+  era: 2014
+  cvss_v3: 7.5
+  fame_tier: landmark
+  fame_score: 5
+  cluster_id: ssl
+  role: arm
+  container: vulhub/openssl/CVE-2014-0160
+- id: shellshock-2014-6271
+  app: Apache httpd 2.4.18
+  cve: CVE-2014-6271
+  service: http
+  port: 80
+  version: Apache httpd 2.2.22 (mod_cgi; Bash 4.2)
+  era: 2014
+  cvss_v3: 9.8
+  fame_tier: landmark
+  fame_score: 5
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/bash/CVE-2014-6271
+- id: citrix-2019-19781
+  app: Citrix ADC
+  cve: CVE-2019-19781
+  service: https
+  port: 443
+  version: Citrix NetScaler ADC 13.0
+  era: 2019
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: web-rce
+  role: arm
+- id: gitlab-2021-22205
+  app: GitLab CE 13.10.3
+  cve: CVE-2021-22205
+  service: https
+  port: 443
+  version: GitLab CE 13.10.3
+  era: 2021
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/gitlab/CVE-2021-22205
+- id: jenkins-2018-1000861
+  app: Jenkins 2.138
+  cve: CVE-2018-1000861
+  service: http
+  port: 8080
+  version: Jenkins 2.138
+  era: 2018
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/jenkins/CVE-2018-1000861
+- id: papercut-2023-27350
+  app: PaperCut NG 22.0.5
+  cve: CVE-2023-27350
+  service: http
+  port: 9191
+  version: PaperCut NG 22.0.5
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+- id: tomcat-jsp-put-2017-12617
+  app: Apache Tomcat 9.0.0
+  cve: CVE-2017-12617
+  service: http
+  port: 8080
+  version: Apache Tomcat 9.0.0.M1 (JSP)
+  era: 2017
+  cvss_v3: 8.1
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: tomcat-jsp
+  role: control
+- id: geoserver-2024-36401
+  app: GeoServer 2.23.2
+  cve: CVE-2024-36401
+  service: http
+  port: 8080
+  version: GeoServer 2.23.2
+  era: 2024
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/geoserver/CVE-2024-36401
+- id: weblogic-2020-14882
+  app: Oracle WebLogic 12.2.1.3
+  cve: CVE-2020-14882
+  service: http
+  port: 7001
+  version: Oracle WebLogic Server 12.2.1.3
+  era: 2020
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/weblogic/CVE-2020-14882
+- id: metabase-2023-38646
+  app: Metabase 0.46.6
+  cve: CVE-2023-38646
+  service: http
+  port: 3000
+  version: Metabase 0.46.6
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/metabase/CVE-2023-38646
+- id: cacti-2022-46169
+  app: Cacti 1.2.22
+  cve: CVE-2022-46169
+  service: http
+  port: 80
+  version: Cacti 1.2.22
+  era: 2022
+  cvss_v3: 9.8
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: web-rce
+  role: control
+  container: vulhub/cacti/CVE-2022-46169
+- id: spring4shell-2022-22965
+  app: Spring Framework 5.3.17
+  cve: CVE-2022-22965
+  service: http
+  port: 8080
+  version: Spring Framework 5.3.17 (embedded Tomcat)
+  era: 2022
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/spring/CVE-2022-22965
+- id: nexus-2024-4956
+  app: Nexus Repository 3.68.0
+  cve: CVE-2024-4956
+  service: http
+  port: 8081
+  version: Nexus Repository Manager 3.68.0-04
+  era: 2024
+  cvss_v3: 7.5
+  fame_tier: obscure
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/nexus/CVE-2024-4956
+- id: thinkphp-2018-25270
+  app: ThinkPHP 5.0.23
+  cve: CVE-2018-25270
+  service: http
+  port: 80
+  version: ThinkPHP 5.0.23
+  era: 2018
+  cvss_v3: 9.8
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: web-rce
+  role: control
+  container: vulhub/thinkphp/5.0.23-rce
+- id: confluence-2023-22527
+  app: Atlassian Confluence 8.5.3
+  cve: CVE-2023-22527
+  service: http
+  port: 8090
+  version: Atlassian Confluence 8.5.3
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/confluence/CVE-2023-22527
+- id: ofbiz-2024-45195
+  app: Apache OFBiz 18.12.15
+  cve: CVE-2024-45195
+  service: https
+  port: 8443
+  version: Apache OFBiz 18.12.15
+  era: 2024
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/ofbiz/CVE-2024-45195
+- id: kibana-2019-7609
+  app: Kibana 6.5.4
+  cve: CVE-2019-7609
+  service: http
+  port: 5601
+  version: Kibana 6.5.4
+  era: 2019
+  cvss_v3: 10.0
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/kibana/CVE-2019-7609
+- id: goahead-2017-17562
+  app: GoAhead 3.6.4
+  cve: CVE-2017-17562
+  service: http
+  port: 80
+  version: GoAhead WebServer 3.6.4
+  era: 2017
+  cvss_v3: 9.8
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: web-rce
+  role: control
+  container: vulhub/goahead/CVE-2017-17562
+- id: spring-cloud-gateway-2022-22947
+  app: Spring Cloud Gateway 3.1.0
+  cve: CVE-2022-22947
+  service: http
+  port: 8080
+  version: Spring Cloud Gateway 3.1.0
+  era: 2022
+  cvss_v3: 10.0
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/spring/CVE-2022-22947
+- id: solr-2019-0193
+  app: Apache Solr 8.1.1
+  cve: CVE-2019-0193
+  service: http
+  port: 8983
+  version: Apache Solr 8.1.1
+  era: 2019
+  cvss_v3: 8.8
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/solr/CVE-2019-0193
+- id: grafana-2021-43798
+  app: Grafana 8.2.6
+  cve: CVE-2021-43798
+  service: http
+  port: 3000
+  version: Grafana 8.2.6
+  era: 2021
+  cvss_v3: 7.5
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-fileread
+  role: arm
+  container: vulhub/grafana/CVE-2021-43798
+- id: joomla-2023-23752
+  app: Joomla 4.2.7
+  cve: CVE-2023-23752
+  service: http
+  port: 80
+  version: Joomla 4.2.7
+  era: 2023
+  cvss_v3: 5.3
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: web-infodisc
+  role: arm
+  container: vulhub/joomla/CVE-2023-23752
+- id: redis-2022-0543
+  app: Redis 5.0.7
+  cve: CVE-2022-0543
+  service: redis
+  port: 6379
+  version: Redis 5.0.7 (Debian)
+  era: 2022
+  cvss_v3: 10.0
+  fame_tier: famous
+  fame_score: 3
+  cluster_id: kv-store
+  role: arm
+  container: vulhub/redis/CVE-2022-0543
+- id: activemq-2023-46604
+  app: Apache ActiveMQ 5.17.3
+  cve: CVE-2023-46604
+  service: openwire
+  port: 61616
+  version: Apache ActiveMQ 5.17.3
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: mq
+  role: arm
+  container: vulhub/activemq/CVE-2023-46604
+- id: samba-2017-7494
+  app: Samba 4.6.3
+  cve: CVE-2017-7494
+  service: smb
+  port: 445
+  version: Samba 4.6.3
+  era: 2017
+  cvss_v3: 9.8
+  fame_tier: famous
+  fame_score: 4
+  cluster_id: smb
+  role: arm
+  container: vulhub/samba/CVE-2017-7494
+- id: elasticsearch-2015-1427
+  app: Elasticsearch 1.4.2
+  cve: CVE-2015-1427
+  service: http
+  port: 9200
+  version: Elasticsearch 1.4.2 (Lucene 4.10.2)
+  era: 2015
+  cvss_v3: 9.8
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: search
+  role: arm
+  container: vulhub/elasticsearch/CVE-2015-1427
+- id: jenkins-2024-23897
+  app: Jenkins 2.441
+  cve: CVE-2024-23897
+  service: http
+  port: 8080
+  version: Jenkins 2.441
+  era: 2024
+  cvss_v3: 9.8
+  fame_tier: high
+  fame_score: 5
+  cluster_id: ci
+  role: arm
+  container: vulhub/jenkins/CVE-2024-23897
+- id: teamcity-2023-42793
+  app: JetBrains TeamCity 2023.05.3
+  cve: CVE-2023-42793
+  service: http
+  port: 8111
+  version: JetBrains TeamCity 2023.05.3
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: high
+  fame_score: 4
+  cluster_id: ci
+  role: arm
+  container: vulhub/teamcity/CVE-2023-42793
+- id: erlang-2025-32433
+  app: Erlang/OTP 27.3.2 (SSH)
+  cve: CVE-2025-32433
+  service: ssh
+  port: 2222
+  version: Erlang/OTP 27.3.2 (SSH)
+  era: 2025
+  cvss_v3: 10.0
+  fame_tier: high
+  fame_score: 4
+  cluster_id: ssh
+  role: arm
+  container: vulhub/erlang/CVE-2025-32433
+- id: ingress-nginx-2025-1974
+  app: ingress-nginx 1.9.5
+  cve: CVE-2025-1974
+  service: http
+  port: 30080
+  version: ingress-nginx 1.9.5
+  era: 2025
+  cvss_v3: 9.8
+  fame_tier: high
+  fame_score: 4
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/ingress-nginx/CVE-2025-1974
+- id: tomcat-2025-24813
+  app: Apache Tomcat 9.0.97
+  cve: CVE-2025-24813
+  service: http
+  port: 8080
+  version: Apache Tomcat 9.0.97
+  era: 2025
+  cvss_v3: 9.8
+  fame_tier: high
+  fame_score: 5
+  cluster_id: web-rce
+  role: arm
+  container: vulhub/tomcat/CVE-2025-24813
+- id: druid-2023-25194
+  app: Apache Druid 25.0.0
+  cve: CVE-2023-25194
+  service: http
+  port: 8888
+  version: Apache Druid 25.0.0
+  era: 2023
+  cvss_v3: 8.8
+  fame_tier: mid
+  fame_score: 2
+  cluster_id: mq
+  role: arm
+  container: vulhub/kafka/CVE-2023-25194
+- id: openfire-2023-32315
+  app: Openfire 4.7.4
+  cve: CVE-2023-32315
+  service: http
+  port: 9090
+  version: Openfire 4.7.4
+  era: 2023
+  cvss_v3: 8.6
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: xmpp
+  role: arm
+  container: vulhub/openfire/CVE-2023-32315
+- id: weblogic-2023-21839
+  app: Oracle WebLogic 12.2.1.3
+  cve: CVE-2023-21839
+  service: http
+  port: 7001
+  version: Oracle WebLogic 12.2.1.3
+  era: 2023
+  cvss_v3: 7.5
+  fame_tier: high
+  fame_score: 5
+  cluster_id: weblogic
+  role: arm
+  container: vulhub/weblogic/CVE-2023-21839
+- id: craftcms-2025-32432
+  app: Craft CMS 5.6.16
+  cve: CVE-2025-32432
+  service: http
+  port: 8088
+  version: Craft CMS 5.6.16
+  era: 2025
+  cvss_v3: 10.0
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: cms
+  role: arm
+  container: vulhub/craftcms/CVE-2025-32432
+- id: pgadmin-2025-2945
+  app: pgAdmin 4 9.1
+  cve: CVE-2025-2945
+  service: http
+  port: 5050
+  version: pgAdmin 4 9.1
+  era: 2025
+  cvss_v3: 9.9
+  fame_tier: mid
+  fame_score: 3
+  cluster_id: dbtool
+  role: arm
+  container: vulhub/pgadmin/CVE-2025-2945
+- id: hugegraph-2024-27348
+  app: Apache HugeGraph 1.2.0
+  cve: CVE-2024-27348
+  service: http
+  port: 8080
+  version: Apache HugeGraph 1.2.0
+  era: 2024
+  cvss_v3: 9.8
+  fame_tier: low
+  fame_score: 2
+  cluster_id: graphdb
+  role: arm
+  container: vulhub/hugegraph/CVE-2024-27348
+- id: opentsdb-2023-25826
+  app: OpenTSDB 2.4.1
+  cve: CVE-2023-25826
+  service: http
+  port: 4242
+  version: OpenTSDB 2.4.1
+  era: 2023
+  cvss_v3: 9.8
+  fame_tier: low
+  fame_score: 2
+  cluster_id: tsdb
+  role: arm
+  container: vulhub/opentsdb/CVE-2023-25826
+- id: pyload-2024-21644
+  app: pyLoad 0.5.0b3.dev31
+  cve: CVE-2024-21644
+  service: http
+  port: 8000
+  version: pyLoad 0.5.0b3.dev31
+  era: 2024
+  cvss_v3: 7.5
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: download-manager
+  role: arm
+- id: biostar2-2023-33365
+  app: Suprema BioStar 2 2.9.0
+  cve: CVE-2023-33365
+  service: https
+  port: 443
+  version: Suprema BioStar 2 2.9.0
+  era: 2023
+  cvss_v3: 7.5
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: access-control
+  role: arm
+- id: idurar-2024-47769
+  app: IDURAR ERP/CRM 4.1.0
+  cve: CVE-2024-47769
+  service: http
+  port: 3000
+  version: IDURAR ERP/CRM 4.1.0
+  era: 2024
+  cvss_v3: 7.5
+  fame_tier: obscure
+  fame_score: 1
+  cluster_id: erp-crm
+  role: arm

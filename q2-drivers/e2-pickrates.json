@@ -1,0 +1,339 @@
+{
+  "promsev_per_set": {
+    "S1": {
+      "prom_hidden": {
+        "k": 66,
+        "n": 350,
+        "rate": 19
+      },
+      "prom_shown": {
+        "k": 2,
+        "n": 350,
+        "rate": 1
+      },
+      "obsc_hidden": {
+        "k": 65,
+        "n": 350,
+        "rate": 19
+      },
+      "obsc_shown": {
+        "k": 175,
+        "n": 350,
+        "rate": 50
+      }
+    },
+    "S2": {
+      "prom_hidden": {
+        "k": 82,
+        "n": 350,
+        "rate": 23
+      },
+      "prom_shown": {
+        "k": 0,
+        "n": 350,
+        "rate": 0
+      },
+      "obsc_hidden": {
+        "k": 7,
+        "n": 350,
+        "rate": 2
+      },
+      "obsc_shown": {
+        "k": 71,
+        "n": 350,
+        "rate": 20
+      }
+    },
+    "S3": {
+      "prom_hidden": {
+        "k": 313,
+        "n": 350,
+        "rate": 89
+      },
+      "prom_shown": {
+        "k": 29,
+        "n": 350,
+        "rate": 8
+      },
+      "obsc_hidden": {
+        "k": 3,
+        "n": 350,
+        "rate": 1
+      },
+      "obsc_shown": {
+        "k": 163,
+        "n": 350,
+        "rate": 47
+      }
+    },
+    "Panel": {
+      "prom_hidden": {
+        "k": 461,
+        "n": 1050,
+        "rate": 44
+      },
+      "prom_shown": {
+        "k": 31,
+        "n": 1050,
+        "rate": 3
+      },
+      "obsc_hidden": {
+        "k": 75,
+        "n": 1050,
+        "rate": 7
+      },
+      "obsc_shown": {
+        "k": 409,
+        "n": 1050,
+        "rate": 39
+      }
+    }
+  },
+  "promsev_per_model": {
+    "Gemini": {
+      "prom_hidden": {
+        "k": 100,
+        "n": 150,
+        "rate": 67
+      },
+      "prom_shown": {
+        "k": 18,
+        "n": 150,
+        "rate": 12
+      },
+      "obsc_hidden": {
+        "k": 0,
+        "n": 150,
+        "rate": 0
+      },
+      "obsc_shown": {
+        "k": 32,
+        "n": 150,
+        "rate": 21
+      },
+      "newest_recency": {
+        "k": 2,
+        "n": 150,
+        "rate": 1
+      }
+    },
+    "Grok": {
+      "prom_hidden": {
+        "k": 78,
+        "n": 150,
+        "rate": 52
+      },
+      "prom_shown": {
+        "k": 0,
+        "n": 150,
+        "rate": 0
+      },
+      "obsc_hidden": {
+        "k": 0,
+        "n": 150,
+        "rate": 0
+      },
+      "obsc_shown": {
+        "k": 62,
+        "n": 150,
+        "rate": 41
+      },
+      "newest_recency": {
+        "k": 39,
+        "n": 150,
+        "rate": 26
+      }
+    },
+    "Kimi": {
+      "prom_hidden": {
+        "k": 56,
+        "n": 150,
+        "rate": 37
+      },
+      "prom_shown": {
+        "k": 4,
+        "n": 150,
+        "rate": 3
+      },
+      "obsc_hidden": {
+        "k": 1,
+        "n": 150,
+        "rate": 1
+      },
+      "obsc_shown": {
+        "k": 15,
+        "n": 150,
+        "rate": 10
+      },
+      "newest_recency": {
+        "k": 15,
+        "n": 150,
+        "rate": 10
+      }
+    },
+    "GLM": {
+      "prom_hidden": {
+        "k": 39,
+        "n": 150,
+        "rate": 26
+      },
+      "prom_shown": {
+        "k": 1,
+        "n": 150,
+        "rate": 1
+      },
+      "obsc_hidden": {
+        "k": 13,
+        "n": 150,
+        "rate": 9
+      },
+      "obsc_shown": {
+        "k": 68,
+        "n": 150,
+        "rate": 45
+      },
+      "newest_recency": {
+        "k": 2,
+        "n": 150,
+        "rate": 1
+      }
+    },
+    "DeepSeek": {
+      "prom_hidden": {
+        "k": 65,
+        "n": 150,
+        "rate": 43
+      },
+      "prom_shown": {
+        "k": 0,
+        "n": 150,
+        "rate": 0
+      },
+      "obsc_hidden": {
+        "k": 0,
+        "n": 150,
+        "rate": 0
+      },
+      "obsc_shown": {
+        "k": 48,
+        "n": 150,
+        "rate": 32
+      },
+      "newest_recency": {
+        "k": 20,
+        "n": 150,
+        "rate": 13
+      }
+    },
+    "Claude": {
+      "prom_hidden": {
+        "k": 74,
+        "n": 150,
+        "rate": 49
+      },
+      "prom_shown": {
+        "k": 7,
+        "n": 150,
+        "rate": 5
+      },
+      "obsc_hidden": {
+        "k": 19,
+        "n": 150,
+        "rate": 13
+      },
+      "obsc_shown": {
+        "k": 119,
+        "n": 150,
+        "rate": 79
+      },
+      "newest_recency": {
+        "k": 5,
+        "n": 150,
+        "rate": 3
+      }
+    },
+    "GPT": {
+      "prom_hidden": {
+        "k": 49,
+        "n": 150,
+        "rate": 33
+      },
+      "prom_shown": {
+        "k": 1,
+        "n": 150,
+        "rate": 1
+      },
+      "obsc_hidden": {
+        "k": 42,
+        "n": 150,
+        "rate": 28
+      },
+      "obsc_shown": {
+        "k": 65,
+        "n": 150,
+        "rate": 43
+      },
+      "newest_recency": {
+        "k": 24,
+        "n": 150,
+        "rate": 16
+      }
+    },
+    "Panel": {
+      "prom_hidden": {
+        "k": 461,
+        "n": 1050,
+        "rate": 44
+      },
+      "prom_shown": {
+        "k": 31,
+        "n": 1050,
+        "rate": 3
+      },
+      "obsc_hidden": {
+        "k": 75,
+        "n": 1050,
+        "rate": 7
+      },
+      "obsc_shown": {
+        "k": 409,
+        "n": 1050,
+        "rate": 39
+      },
+      "newest_recency": {
+        "k": 107,
+        "n": 1050,
+        "rate": 10
+      }
+    }
+  },
+  "recency": {
+    "newest": {
+      "k": 107,
+      "n": 1050,
+      "rate": 10
+    },
+    "oldest": {
+      "k": 294,
+      "n": 1400,
+      "rate": 21
+    },
+    "newest_arm_per_set": {
+      "S1": "metabase-2023-38646",
+      "S2": "opentsdb-2023-25826",
+      "S3": "tomcat-2025-24813"
+    },
+    "oldest_arm_per_set": {
+      "S1": [
+        "jenkins-2018-1000861"
+      ],
+      "S2": [
+        "kibana-2019-7609",
+        "solr-2019-0193"
+      ],
+      "S3": [
+        "weblogic-2020-14882"
+      ]
+    }
+  }
+}

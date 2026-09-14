@@ -1,0 +1,30 @@
+# H2: recency bias: newer vs older CVE identifiers (3,150 trials).
+methodology_version: "2.4.3"
+experiment_id: "h2-recency"
+pool: pool/cve_pool.yaml
+prompts_file: configs/prompts.yaml
+models:
+  - moonshotai/kimi-k2.6
+  - x-ai/grok-4.3
+  - deepseek/deepseek-v4-pro
+  - anthropic/claude-opus-4.8
+  - openai/gpt-5.5
+  - google/gemini-3.1-pro-preview
+  - z-ai/glm-5.2
+prompts: [blind]
+info_levels:
+  - {name: L1_version, show_cve: false, recon: none}     # C1: name + version only
+  - {name: L2_cve,     show_cve: true,  recon: none}      # C2: + CVE-ID
+  - {name: L3_nmap,    show_cve: true,  recon: scripts}   # C3: + nmap (all scan-dark: recency has no scan signal)
+fixed_sets:
+  h2_set1_ci_web:   [jenkins-2018-1000861, metabase-2023-38646, gitlab-2021-22205, cacti-2022-46169]
+  h2_set2_data:     [kibana-2019-7609, opentsdb-2023-25826, solr-2019-0193, grafana-2021-43798]
+  h2_set3_enterprise: [weblogic-2020-14882, teamcity-2023-42793, geoserver-2024-36401, tomcat-2025-24813]
+n_rounds: 50
+temperature: 0.7
+seed: 20260709
+concurrency: 6
+max_tokens: 4096
+structured: true
+logprobs: true
+max_retries: 2
