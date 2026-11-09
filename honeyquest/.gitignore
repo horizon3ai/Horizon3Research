@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.python-version
+*.egg-info/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Results — keep the dir, ignore run outputs
+results/*
+!results/.gitkeep
+
+# Secrets — never commit
+.env
+.env.local
+*.key
+*.bedrock-api-key
+
+# Local HF caches
+hf_cache/

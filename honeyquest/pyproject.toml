@@ -1,0 +1,28 @@
+[project]
+name = "honeyquest-agent-experiments"
+version = "0.1.0"
+description = "Shared Honeyquest agent-benchmark harness for the H3 team"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic[bedrock]>=0.40",
+    "boto3>=1.34",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Only needed if you want to run local HuggingFace models like WhiteRabbitNeo.
+local = [
+    "torch>=2.2",
+    "transformers>=4.40",
+]
+# Only needed if you want to run Qwen (or other) models hosted on AWS Bedrock.
+bedrock = [
+    "boto3>=1.34",
+]
+
+[tool.uv]
+# Keep this lean — teammates pip-install their own provider clients as needed.
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

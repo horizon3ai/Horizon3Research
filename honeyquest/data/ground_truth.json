@@ -1,0 +1,313 @@
+[
+  {
+    "qid": "TR150.networkrequests.github_com.security-misconfiguration",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      2,
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.htaccess.admin-redirect",
+    "label": "deceptive",
+    "applied_honeywire": "htaccess-admin-redirect",
+    "risky_lines": [],
+    "deceptive_lines": [
+      5
+    ],
+    "description": "The `Redirect` directive seems to leak the location and access rights to the admin panel."
+  },
+  {
+    "qid": "TR150.networkrequests.juice_shop_herokuapp_com-015",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR849.filesystem.nikiforakis.home-lpc-customer_list_2010",
+    "label": "deceptive",
+    "applied_honeywire": "filesystem-customer-list",
+    "risky_lines": [],
+    "deceptive_lines": [
+      35
+    ],
+    "description": "Filename used by Nikiforakis et al. to grab attention on file hosting services"
+  },
+  {
+    "qid": "hackertarget-003375.03",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.httpheaders.github-zaproxy_zap-extensions-xhr",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.httpheaders.hackertarget-087288.01-httpheader-devtoken",
+    "label": "deceptive",
+    "applied_honeywire": "httpheaders-devtoken",
+    "risky_lines": [],
+    "deceptive_lines": [
+      9
+    ],
+    "description": "The `X-DevToken` header seems to leak a JWT token used during development."
+  },
+  {
+    "qid": "TR150.filesystem.home-donald",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR856.networkrequests.github_com.security-misconfiguration-and-broken-user-authentication",
+    "label": "deceptive",
+    "applied_honeywire": "networkrequests-sessid-parameter",
+    "risky_lines": [
+      2,
+      3,
+      4,
+      5,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "deceptive_lines": [],
+    "description": "The `refresh-session` endpoint seems to leak the session ID in the query parameters."
+  },
+  {
+    "qid": "TR150.htaccess.github-awurth_Slim3-admin-redirect",
+    "label": "deceptive",
+    "applied_honeywire": "htaccess-admin-redirect",
+    "risky_lines": [],
+    "deceptive_lines": [
+      28
+    ],
+    "description": "The `RedirectMatch` directive seems to leak the location and access rights to the admin panel."
+  },
+  {
+    "qid": "TR150.filesystem.root-k8s-manifests",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      12,
+      14
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.filesystem.root-certificates",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      10,
+      11,
+      15,
+      16
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.httpheaders.outdated-iis-server-5.0",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      3
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "hackertarget-101810.02",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.filesystem.home-leonard-password-txt",
+    "label": "deceptive",
+    "applied_honeywire": "filesystem-passwords",
+    "risky_lines": [],
+    "deceptive_lines": [
+      8
+    ],
+    "description": "A password file may contain credentials useful for lateral movement."
+  },
+  {
+    "qid": "TR150.networkrequests.jira_dynatrace_org-trunc-02-insufficient-logging-monitoring",
+    "label": "deceptive",
+    "applied_honeywire": "networkrequests-log-endpoint",
+    "risky_lines": [],
+    "deceptive_lines": [
+      10
+    ],
+    "description": "The `/rest/logdriver/2.0/send` endpoint may be used to spam the logs with long and useless messages."
+  },
+  {
+    "qid": "TR150.httpheaders.outdated-apache-server-1.0.3",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      3
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.httpheaders.outdated-php-server-5.2.10-ubuntu-5.10",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [
+      4
+    ],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.networkrequests.mail_google_com.mass-assignment",
+    "label": "risky",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.networkrequests.juice_shop_herokuapp_com-003",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.httpheaders.hackertarget-033646.01-httpheader-devtoken",
+    "label": "deceptive",
+    "applied_honeywire": "httpheaders-devtoken",
+    "risky_lines": [],
+    "deceptive_lines": [
+      4
+    ],
+    "description": "The `X-DevToken` header seems to leak a JWT token used during development."
+  },
+  {
+    "qid": "TR150.htaccess.github-GemGeorge_SniperPhish",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR849.networkrequests.sahin.www_tiktok_com-trunc-012-inject-unescaped-json",
+    "label": "deceptive",
+    "applied_honeywire": "networkrequests-unescaped-json",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": "The `dat` parameter holds unescaped JSON payload"
+  },
+  {
+    "qid": "TR645.htaccess.admin-redirect",
+    "label": "deceptive",
+    "applied_honeywire": "htaccess-admin-redirect",
+    "risky_lines": [],
+    "deceptive_lines": [
+      5
+    ],
+    "description": "The `Redirect` directive seems to leak the location and access rights to the admin panel."
+  },
+  {
+    "qid": "TR150.networkrequests.juice_shop_herokuapp_com-002",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.filesystem.home-lpc-password-txt",
+    "label": "deceptive",
+    "applied_honeywire": "filesystem-passwords",
+    "risky_lines": [],
+    "deceptive_lines": [
+      26
+    ],
+    "description": "A password file may contain credentials useful for lateral movement."
+  },
+  {
+    "qid": "TR849.filesystem.rowe.home-cooper",
+    "label": "deceptive",
+    "applied_honeywire": "filesystem-rowe",
+    "risky_lines": [],
+    "deceptive_lines": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "description": "Artificial example by Rowe et al. for fake honeypots"
+  },
+  {
+    "qid": "TR856.httpheaders.outdated-apache-server-1.0.3-and-httpheader-devtoken",
+    "label": "deceptive",
+    "applied_honeywire": "httpheaders-devtoken",
+    "risky_lines": [
+      3
+    ],
+    "deceptive_lines": [
+      8
+    ],
+    "description": "The `X-DevToken` header seems to leak a JWT token used during development."
+  },
+  {
+    "qid": "TR849.filesystem.rowe.home-gaitan",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  },
+  {
+    "qid": "TR150.htaccess.github-defiprime_defiprime",
+    "label": "neutral",
+    "applied_honeywire": "",
+    "risky_lines": [],
+    "deceptive_lines": [],
+    "description": ""
+  }
+]
